@@ -46,11 +46,12 @@ li {
 
 nav {
     background-color: #009dff;
-    padding : 15px;
+    padding : 13px;
     color: rgb(255, 255, 255);
     display:flex;
     align-items: center;
-    gap: 10px;
+    font-size-adjust: auto;
+    gap: 8px;
 }
 
 input[type="search"] {
@@ -66,7 +67,7 @@ button[type="button"] {
     background-color: #ffffff;
     color: #009dff;
     border: none;
-    padding: 6px 10px;
+    padding: 5px 8px;
     border-radius: 5px;
     cursor: pointer;
     font-size: 14px;
