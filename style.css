@@ -1,5 +1,6 @@
 h1 {
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 h2 {
@@ -7,16 +8,19 @@ h2 {
     margin-right: 50px;
     font-weight: lighter;   
     text-align: center;
+    color: rgb(255, 255, 255);
 }
 
 h3 {
     margin-left: 50px;
     margin-right: 50px;
+    color: rgb(255, 255, 255);
 }
 
 h4 {
     margin-left: 50px;
     margin-right: 50px;
+    color: rgb(255, 255, 255);
 }
 
 h5 {
@@ -24,12 +28,14 @@ h5 {
     margin-right: 50px;
     font-size: 15px;
     font-weight: lighter;
+    color: rgb(255, 255, 255);
 }
 
 p {
     margin-left: 50px;
     margin-right: 50px;
     font-size: 14px;;
+    color: rgb(255, 255, 255);
 }
 
 li {
@@ -56,9 +62,21 @@ input[type="search"] {
     margin-left:auto;
 }
 
+button[type="button"] {
+    background-color: #ffffff;
+    color: #009dff;
+    border: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+
 body {
-  background-color: #ffffff;
-  color: rgb(0, 0, 0);
+  background-color: #0595ee;
+  color: #ffffff;
     font-family: Arial, sans-serif;
     min-height: 100vh;
     min-width: auto;
@@ -68,7 +86,7 @@ body {
 }
 
 footer {
-    background-color: #f4f4f4;
+    background-color: #009dff;
     margin-top: auto;
     text-align: center;
     padding-top: 20px;
@@ -77,7 +95,7 @@ footer {
 }
 
 a {
-    color: white;   
+    color: rgb(255, 255, 255);   
     text-decoration: none;
     font-weight: bold;
 }
@@ -125,13 +143,14 @@ input[type="submit"] {
 }
 
 label {
-    color : #009dff;    
+    color : #ffffff;    
     font-size: 18px;
     font-weight: semi-bold;
 }
 
 section {
-    background-color: #f4f4f4;
+    background-color: #009dff;
+    color: #ffffff;
     padding: 20px;
     border-radius: 5px;
     margin: 20px;

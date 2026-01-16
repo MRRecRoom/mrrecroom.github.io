@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Blogs</title>
+  <title>Blogs.net/Blogs</title>
+  <link rel="icon" type="Blogs" href="https://images.seeklogo.com/logo-png/44/1/web-site-www-icon-logo-png_seeklogo-446764.png">
   <link rel="stylesheet" href="style.css">
   <script defer src="blogs.js"></script>
 </head>
@@ -13,20 +14,23 @@
     <a href="createblog.html">Create Blog</a> |
     <a href="blogs.html">Blogs</a> |
     <a href="about.html">About</a>
-    <input id="navSearch" type="search" placeholder="Search blogs...">
-    <button id="navSearchBtn" type="button">Search</button>
+    <input id="navSearch" type="search" placeholder="Search blogs..." list="blogSuggestions">
+    <datalist id="blogSuggestions"></datalist>
+    <button id="navSearchBtn" type="button">Search </button>
     </nav>
 
   <h2>All Blogs</h2>
-
+<section>
   <div style="margin-bottom: 12px;">
     <input id="searchInput" type="search" placeholder="Search by title or content..." />
     <button id="searchBtn" type="button">Search</button>
     <button id="clearBtn" type="button">Clear</button>
   </div>
-
+</section>
+<br>
+<section>
   <div id="blogsList"></div>
-
+</section>
   <footer>
     <hr>
     <p>&copy; 2026 Blogs. All rights reserved.</p>
