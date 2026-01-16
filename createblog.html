@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="CreateBlog.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blogs.net/Create Blog</title>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="createblog.html">Create Blog</a> |
+    <a href="blogs.html">Blogs</a> |
+    <a href="about.html">About</a>
+    <input id="navSearch" type="search" placeholder="Search blogs...">
+    <button id="navSearchBtn" type="button">Search</button>
+    </nav>
+
+  <h2>Create a Blog</h2>
+
+  <form id="blogForm">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" required placeholder="Enter your blog title here..."><br><br>
+
+    <label for="content">Content:</label><br>
+    <textarea id="content" required placeholder="Enter your blog content here..."></textarea><br><br>
+
+    <input type="submit" value="Submit Blog">
+  </form>
+
+  <br>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Blogs. All rights reserved.</p>
+  </footer>
+</body>
+</html>

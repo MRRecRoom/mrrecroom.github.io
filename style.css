@@ -1,0 +1,137 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: lighter;   
+    text-align: center;
+}
+
+h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h4 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h5 {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 15px;
+    font-weight: lighter;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 14px;;
+}
+
+li {
+    margin-left: 55px;
+    margin-right: 50px;
+    font-size: 14px;
+}
+
+nav {
+    background-color: #009dff;
+    padding : 15px;
+    color: rgb(255, 255, 255);
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="search"] {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 14px;
+    cursor: pointer;
+    margin-left:auto;
+}
+
+body {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #f4f4f4;
+    margin-top: auto;
+    text-align: center;
+    padding-top: 20px;
+    border-radius: 5px;
+    justify-self: flex-end;
+}
+
+a {
+    color: white;   
+    text-decoration: none;
+    font-weight: bold;
+}
+
+form {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+textarea {
+    width: 95%;
+    height: 200px;
+    padding : 10px;
+    background-color: #009dff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 20%;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #009dff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+::placeholder {
+    color: rgb(238, 238, 238);
+}
+
+input[type="submit"] {
+    background-color: #009dff;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+label {
+    color : #009dff;    
+    font-size: 18px;
+    font-weight: semi-bold;
+}
+
+section {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px;
+}

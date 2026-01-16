@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Edit Blog</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="edit.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a> |
+    <a href="createblog.html">Create Blog</a> |
+    <a href="blogs.html">Blogs</a> |
+    <a href="about.html">About</a>
+    <input id="navSearch" type="search" placeholder="Search blogs...">
+    <button id="navSearchBtn" type="button">Search</button>
+    </nav>
+
+  <h2>Edit Blog</h2>
+
+  <form id="editForm">
+    <label for="title">Title:</label><br>
+    <input type="text" id="title" required><br><br>
+
+    <label for="content">Content:</label><br>
+    <textarea id="content" required></textarea><br><br>
+
+    <button type="submit">Save Changes</button>
+    <button id="cancelBtn" type="button">Cancel</button>
+  </form>
+
+  <footer>
+    <hr>
+    <p>&copy; 2026 Blogs. All rights reserved.</p>
+  </footer>
+</body>
+</html>
