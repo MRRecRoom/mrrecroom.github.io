@@ -2,13 +2,12 @@ function getBlogs() {
   return JSON.parse(localStorage.getItem("blogs") || "[]");
 }
 
-// Extract keywords from content
 function extractKeywords(text) {
   return text
     .toLowerCase()
     .replace(/[^a-z0-9\s]/g, "")
     .split(/\s+/)
-    .filter(w => w.length >= 4); // ignore small words
+    .filter(w => w.length >= 4);
 }
 
 function buildSuggestions() {
@@ -27,7 +26,7 @@ function buildSuggestions() {
     }
   });
 
-  return Array.from(set).slice(0, 50); // limit for UX
+  return Array.from(set).slice(0, 50);
 }
 
 document.addEventListener("DOMContentLoaded", () => {

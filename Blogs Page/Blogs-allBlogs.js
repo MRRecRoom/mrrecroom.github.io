@@ -62,7 +62,6 @@ function renderList(blogs, q) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Navbar search support
   const navSearch = document.getElementById("navSearch");
   const navSearchBtn = document.getElementById("navSearchBtn");
   if (navSearch && navSearchBtn) {
@@ -84,7 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const searchBtn = document.getElementById("searchBtn");
   const clearBtn = document.getElementById("clearBtn");
 
-  // load from URL: blogs.html?q=...
   const qFromUrl = getQueryParam("q").trim();
   searchInput.value = qFromUrl;
 

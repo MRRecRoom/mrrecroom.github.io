@@ -8,12 +8,10 @@ function saveBlogs(blogs) {
 }
 
 function makeId() {
-  // simple unique-ish id
   return Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // searchbar (works on every page that has these IDs)
   const navSearch = document.getElementById("navSearch");
   const navSearchBtn = document.getElementById("navSearchBtn");
   if (navSearch && navSearchBtn) {
@@ -49,10 +47,9 @@ document.addEventListener("DOMContentLoaded", () => {
       updatedAt: Date.now()
     };
 
-    blogs.unshift(blog); // newest first
+    blogs.unshift(blog);
     saveBlogs(blogs);
 
-    // go to the new blog
     window.location.href = `blog.html?id=${encodeURIComponent(blog.id)}`;
   });
 });

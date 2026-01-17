@@ -13,7 +13,6 @@ function getQueryParam(name) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Navbar search
   const navSearch = document.getElementById("navSearch");
   const navSearchBtn = document.getElementById("navSearchBtn");
   if (navSearch && navSearchBtn) {
