@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navSearch && navSearchBtn) {
     navSearchBtn.addEventListener("click", () => {
       const q = (navSearch.value || "").trim();
-      window.location.href = `blogs.html?q=${encodeURIComponent(q)}`;
+      window.location.href = `Blogs-blog.html?q=${encodeURIComponent(q)}`;
     });
     navSearch.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
@@ -50,6 +50,6 @@ document.addEventListener("DOMContentLoaded", () => {
     blogs.unshift(blog);
     saveBlogs(blogs);
 
-    window.location.href = `blog.html?id=${encodeURIComponent(blog.id)}`;
+    window.location.href = `Blogs-blog.html?id=${encodeURIComponent(blog.id)}`;
   });
 });

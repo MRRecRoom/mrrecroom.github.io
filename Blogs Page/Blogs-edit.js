@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
   contentEl.value = blog.content;
 
   document.getElementById("cancelBtn").addEventListener("click", () => {
-    window.location.href = `blog.html?id=${encodeURIComponent(id)}`;
+    window.location.href = `Blogs-blog.html?id=${encodeURIComponent(id)}`;
   });
 
   document.getElementById("editForm").addEventListener("submit", (e) => {
@@ -39,6 +39,6 @@ document.addEventListener("DOMContentLoaded", () => {
     blog.updatedAt = Date.now();
 
     saveBlogs(blogs);
-    window.location.href = `blog.html?id=${encodeURIComponent(id)}`;
+    window.location.href = `Blogs-blog.html?id=${encodeURIComponent(id)}`;
   });
 });

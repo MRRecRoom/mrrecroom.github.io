@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navSearch && navSearchBtn) {
     navSearchBtn.addEventListener("click", () => {
       const q = (navSearch.value || "").trim();
-      window.location.href = `blogs.html?q=${encodeURIComponent(q)}`;
+      window.location.href = `Blogs-blog.html?q=${encodeURIComponent(q)}`;
     });
     navSearch.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const blog = blogs.find(b => b.id === id);
 
   if (!blog) {
-    document.body.innerHTML = `<h2>Blog not found.</h2><a href="blogs.html">Back</a>`;
+    document.body.innerHTML = `<h2>Blog not found.</h2><a href="Blogs-blog.html">Back</a>`;
     return;
   }
 
@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.getElementById("blogContent").textContent = blog.content;
 
   document.getElementById("editBtn").addEventListener("click", () => {
-    window.location.href = `edit.html?id=${encodeURIComponent(blog.id)}`;
+    window.location.href = `Blogs-edit.html?id=${encodeURIComponent(blog.id)}`;
   });
 
   document.getElementById("deleteBtn").addEventListener("click", () => {
@@ -52,6 +52,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const next = blogs.filter(b => b.id !== blog.id);
     saveBlogs(next);
-    window.location.href = "blogs.html";
+    window.location.href = "Blogs-blog.html";
   });
 });

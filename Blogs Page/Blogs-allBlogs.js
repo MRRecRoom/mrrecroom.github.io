@@ -42,7 +42,7 @@ function renderList(blogs, q) {
   if (filtered.length === 0) {
     container.innerHTML = q
       ? `<p>No results for "<b>${escapeHtml(q)}</b>".</p>`
-      : `<p>No blogs yet. <a href="createblog.html">Create one</a>.</p>`;
+      : `<p>No blogs yet. <a href="Blogs-createblog.html">Create one</a>.</p>`;
     return;
   }
 
@@ -53,9 +53,9 @@ function renderList(blogs, q) {
         <h3 style="margin:0 0 6px 0;">${escapeHtml(b.title)}</h3>
         <small>Updated: ${formatDate(b.updatedAt)}</small>
         <p>${escapeHtml(preview)}</p>
-        <a href="blog.html?id=${encodeURIComponent(b.id)}">Read</a>
+        <a href="Blogs-blog.html?id=${encodeURIComponent(b.id)}">Read</a>
         &nbsp;|&nbsp;
-        <a href="edit.html?id=${encodeURIComponent(b.id)}">Edit</a>
+        <a href="Blogs-edit.html?id=${encodeURIComponent(b.id)}">Edit</a>
       </div>
     `;
   }).join("");
@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navSearch && navSearchBtn) {
     navSearchBtn.addEventListener("click", () => {
       const q = (navSearch.value || "").trim();
-      window.location.href = `blogs.html?q=${encodeURIComponent(q)}`;
+      window.location.href = `Blogs-blog.html?q=${encodeURIComponent(q)}`;
     });
     navSearch.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
