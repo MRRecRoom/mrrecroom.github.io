@@ -1,7 +1,6 @@
-body {
-  background-color: #0e0e0e;
-  color: #ffffff;
-    font-family: Arial, sans-serif;
+html, body {
+  background: content-box linear-gradient(45deg, black, rgb(0, 38, 53)); color: var(--text);
+    font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
     min-height: 100vh;
     min-width: auto;
     margin: 0;
@@ -11,11 +10,13 @@ body {
 
 h1 {
     text-align: center;
+    color: white;
 }
 
 h2 {
     font-weight: lighter;   
     text-align: center;
+    color: white;
 }
 
 h3 {
@@ -39,6 +40,7 @@ p {
     margin-left: 50px;
     margin-right: 50px;
     font-size: 14px;
+    color: white;
 }
 
 li {
@@ -48,7 +50,7 @@ li {
 }
 
 nav {
-    background-color: #1c1c1c;
+    background-color: rgb(0, 45, 63);
     padding: clamp(12px, 3vw, 32px);
     padding : 20px;
     color: rgb(255, 255, 255);
@@ -67,7 +69,7 @@ a {
 }
 
 footer {
-    background-color: #1c1c1c;
+    background-color: #1c1c1c00;
     margin-top: auto;
     text-align: center;
     padding-top: 20px;
@@ -76,7 +78,7 @@ footer {
 }
 
 section {
-    background-color: #1c1c1c;
+    background-color: rgb(0, 45, 63);
     color: #dedede;
     padding: 20px;
     border-radius: 5px;
