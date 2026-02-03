@@ -1,0 +1,59 @@
+html, body {
+    background: content-box linear-gradient(45deg, #6B7FD7, #2E86AB); color: var(--text);
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif;
+      min-height: 100vh;
+      min-width: auto;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+  }
+
+h1 {
+    text-align: center;
+    color: white;
+}
+
+h2 {
+    font-weight: lighter;   
+    text-align: center;
+}
+
+h3 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h4 {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+h5 {
+    margin-left: 50px;
+    margin-right: 50px;
+    font-weight: lighter;
+}
+
+p {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+li {
+    margin-left: 55px;
+    margin-right: 50px;
+}
+
+section {
+    background-color: #F0544F;
+    color: #EFEFEF;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+.RVT > img {
+    margin-left: 55px;
+    border-radius: 10px;
+}
+
